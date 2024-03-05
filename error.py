@@ -25,7 +25,7 @@ def FakeErrorMessage():
     test = messagebox.showerror(random.choice(windows_error_messages))
 
 
-    if test == windows_error_messages[0]:
+    if test == windows_error_messages[0]: #matches index of first one in list
         print("Restarting PC")
         os.system("shutdown /r /t 1")
 
