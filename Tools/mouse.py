@@ -13,7 +13,7 @@ def start():
     paused = False
 
     while running:
-        if keyboard.is_pressed('w') and not paused:  
+        if keyboard.is_pressed('w') and not paused:  #Not specified but make sure to hold W not just click
             print("Paused. Press 'w' again to resume.")
             while keyboard.is_pressed('w'): 
                 sleep(0.1)
